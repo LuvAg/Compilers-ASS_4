@@ -1,0 +1,57 @@
+════════════════════════════════════════════════════════════════
+  BROLANG INTERMEDIATE CODE GENERATOR - CS327 Assignment #4
+════════════════════════════════════════════════════════════════
+
+✓ Parsing and code generation successful!
+
+========================================
+        SOURCE PROGRAM INPUT
+========================================
+hibro
+bro num i = 0;
+jabtakbro (i < 3) {
+  agarbro (i == 1) {
+    bolbro 999;
+  }
+  warnabro {
+    bolbro i;
+  }
+  i += 1;
+}
+byebro
+
+
+========================================
+   GENERATED INTERMEDIATE CODE (TAC)   
+========================================
+
+#     | OP           | ARG1         | ARG2         | RESULT      
+------|--------------|--------------|--------------|---------------
+0     | =            | 0            |              | i           
+1     | label        | L1           |              |             
+2     | <            | i            | 3            | t1          
+3     | ifFalse      | t1           |              | L2          
+4     | ==           | i            | 1            | t2          
+5     | ifFalse      | t2           |              | L3          
+6     | print        | 999          |              |             
+7     | goto         |              |              | L4          
+8     | label        | L3           |              |             
+9     | print        | i            |              |             
+10    | label        | L4           |              |             
+11    | +            | i            | 1            | t3          
+12    | =            | t3           |              | i           
+13    | goto         |              |              | L1          
+14    | label        | L2           |              |             
+
+
+========================================
+         IR GENERATION STATISTICS
+========================================
+Total Quadruples Generated: 15
+Temporary Variables Used:   3
+Labels Generated:           4
+
+════════════════════════════════════════════════════════════════
+Status: ✓ INTERMEDIATE CODE GENERATION COMPLETE
+════════════════════════════════════════════════════════════════
+

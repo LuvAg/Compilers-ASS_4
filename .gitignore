@@ -1,0 +1,42 @@
+# Build artifacts
+*.o
+*.a
+*.so
+brolang_parser
+lex.yy.c
+lex.yy.h
+brolang_parser.tab.c
+brolang_parser.tab.h
+brolang_parser.tab.o
+lex.yy.o
+brolang_parser_icg
+brolang_parser_icg.tab.c
+brolang_parser_icg.tab.h
+brolang_parser_icg.tab.o
+lex_icg.yy.c
+lex_icg.yy.o
+icg.o
+
+# Generated files
+*.output
+brolang_parser.output
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Text output files
+output.txt
+CS327_ASSIGNMENT3_COMPLETE_SOLUTION.txt
+assignment4.txt
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Build
+build/
+dist/

@@ -1,0 +1,6 @@
+Syntax Error at line 2 near ';': syntax error, unexpected SEMICOLON
+════════════════════════════════════════════════════════════════
+  BROLANG INTERMEDIATE CODE GENERATOR - CS327 Assignment #4
+════════════════════════════════════════════════════════════════
+
+✗ Code generation failed with 1 error(s)

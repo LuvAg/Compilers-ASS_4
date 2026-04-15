@@ -1,0 +1,38 @@
+════════════════════════════════════════════════════════════════
+  BROLANG INTERMEDIATE CODE GENERATOR - CS327 Assignment #4
+════════════════════════════════════════════════════════════════
+
+✓ Parsing and code generation successful!
+
+========================================
+        SOURCE PROGRAM INPUT
+========================================
+hibro
+bro str msg = "hello";
+bro bool ok = sahi;
+bolbro msg, ok;
+byebro
+
+
+========================================
+   GENERATED INTERMEDIATE CODE (TAC)   
+========================================
+
+#     | OP           | ARG1         | ARG2         | RESULT      
+------|--------------|--------------|--------------|---------------
+0     | =            | "hello"      |              | msg         
+1     | =            | sahi         |              | ok          
+2     | print        | msg,ok       |              |             
+
+
+========================================
+         IR GENERATION STATISTICS
+========================================
+Total Quadruples Generated: 3
+Temporary Variables Used:   0
+Labels Generated:           0
+
+════════════════════════════════════════════════════════════════
+Status: ✓ INTERMEDIATE CODE GENERATION COMPLETE
+════════════════════════════════════════════════════════════════
+

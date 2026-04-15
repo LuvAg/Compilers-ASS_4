@@ -1,0 +1,6 @@
+Syntax Error at line 3 near 'bolbro': syntax error, unexpected BOLBRO
+════════════════════════════════════════════════════════════════
+  BROLANG INTERMEDIATE CODE GENERATOR - CS327 Assignment #4
+════════════════════════════════════════════════════════════════
+
+✗ Code generation failed with 1 error(s)

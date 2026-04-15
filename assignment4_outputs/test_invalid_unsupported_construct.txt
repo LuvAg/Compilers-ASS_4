@@ -1,0 +1,6 @@
+Unsupported construct at line 2: 'switchbro' is not supported in Assignment 4 ICG
+════════════════════════════════════════════════════════════════
+  BROLANG INTERMEDIATE CODE GENERATOR - CS327 Assignment #4
+════════════════════════════════════════════════════════════════
+
+✗ Code generation failed with 1 error(s)

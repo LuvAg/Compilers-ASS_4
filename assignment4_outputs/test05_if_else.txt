@@ -1,0 +1,47 @@
+════════════════════════════════════════════════════════════════
+  BROLANG INTERMEDIATE CODE GENERATOR - CS327 Assignment #4
+════════════════════════════════════════════════════════════════
+
+✓ Parsing and code generation successful!
+
+========================================
+        SOURCE PROGRAM INPUT
+========================================
+hibro
+bro num x = 2;
+agarbro (x > 5) {
+  bolbro 100;
+}
+warnabro {
+  bolbro 200;
+}
+byebro
+
+
+========================================
+   GENERATED INTERMEDIATE CODE (TAC)   
+========================================
+
+#     | OP           | ARG1         | ARG2         | RESULT      
+------|--------------|--------------|--------------|---------------
+0     | =            | 2            |              | x           
+1     | >            | x            | 5            | t1          
+2     | ifFalse      | t1           |              | L1          
+3     | print        | 100          |              |             
+4     | goto         |              |              | L2          
+5     | label        | L1           |              |             
+6     | print        | 200          |              |             
+7     | label        | L2           |              |             
+
+
+========================================
+         IR GENERATION STATISTICS
+========================================
+Total Quadruples Generated: 8
+Temporary Variables Used:   1
+Labels Generated:           2
+
+════════════════════════════════════════════════════════════════
+Status: ✓ INTERMEDIATE CODE GENERATION COMPLETE
+════════════════════════════════════════════════════════════════
+
